@@ -1,0 +1,444 @@
+html {
+    font-family: "Jost", sans-serif;
+    background-color: rgba(6, 74, 119, 1);
+}
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    gap: 25px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  minmax(0, 1fr);
+    background-color: rgba(6, 74, 119, 1);
+    
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  minmax(0, 1fr);
+    background-color: white;
+}
+.Line1 {
+    border-right: 1pt dashed white;
+    width: 50%;
+}
+
+.Line2 {
+   position: relative;
+    border-right: 1pt dashed white;
+    width: 20%;
+    border-top: 1pt dashed white;
+    margin-left: 30%;
+}
+.Line3 {
+    width: 40%;
+    border-right: 1pt dashed white;
+    border-top: 1pt dashed white;
+    margin-top: 50%;
+    border-left: 1pt dashed white;
+    margin-left: -200px;
+
+}
+.Line4 {
+    width: 40%;
+    border-right: 1pt dashed white;
+    border-top: 1pt dashed white;
+    margin-top: 30%;
+    margin-left:80%;
+    border-left: 1pt dashed white;
+    margin-right: -20px;
+    align-items: right;
+}
+button {
+    border-style: hidden;
+    color:white;
+    background-color:white;
+    margin-top: 4px;
+    border-radius: 40px;
+}
+
+.button1 {
+    float: right;
+}
+
+.decor1 {
+    color: white;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.linedecor {
+    height: 1px;
+    font-size: 1pt;
+    padding-right: 10%;
+    margin-left: 10%;
+    display:inline-block;
+}
+
+.linedecor2 {
+    
+    height: 1px;
+    font-size: 1pt;
+    padding-right: 10%;
+    margin-left: 5%;
+    display:inline-block;
+}
+
+#copy1 {
+    grid-column: 1/3;
+    background-color: white;
+    width: 80%;
+    margin-left: 5%;
+}
+#copy1 p {
+    padding: 5%;
+    font-weight: 400;
+    font-size: 16pt;
+    
+}
+#copy2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align:right;
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    height:fit-content;
+}
+#copy2 p {
+    padding: 5%;
+    font-weight: 900;
+    font-size: 10pt;
+}
+#copy2 h4 {
+    text-align: left;
+}
+
+#copy3 {
+    grid-column: 1/3;
+    grid-row: 3/3;
+    background-color: white;
+    width: 80%;
+    align-content: right;
+}
+
+#copy3 p {
+    padding: 5%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+.home {
+    animation: cycleText 10s steps(20) forwards;
+}
+
+.text:hover {
+    color:rgba(0, 55, 255, 1);
+}
+
+
+
+.animated-header {
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.animated-header::after {
+    content: "JOST";
+    animation: cycleText 5s steps(10) forwards;
+    font-size: 140px;
+    font-weight: 700;
+    margin-left: 40%;
+    position: absolute;
+    top: 0;
+    left: 20;
+    color: rgba(255, 255, 255, 1);
+    animation-iteration-count: infinite;
+}
+
+.animated-header:hover {
+    animation: cycleText 5s steps(10) forwards;
+}
+
+@keyframes cycleText {
+    0% { content: "A"; }
+    1% { content: "R"; }
+    2% { content: "O"; }
+    3% { content: "K"; }
+    4% { content: "G"; }
+    5% { content: "P"; }
+    6% { content: "V"; }
+    7% { content: "L"; }
+    8% { content: "T"; }
+    9% { content: "V"; }
+    10% { content: "J"; }
+    11% { content: "JR"; }
+    12% { content: "JW"; }
+    13% { content: "JS"; }
+    14% { content: "JX"; }
+    15% { content: "JL"; }
+    16% { content: "JP"; }
+    17% { content: "JQ"; }
+    18% { content: "JK"; }
+    19% { content: "JA"; }
+    20% { content: "JT"; }
+    21% { content: "JO"; }
+    22% { content: "JOR"; }
+    23% { content: "JOX"; }
+    24% { content: "JOG"; }
+    25% { content: "JOZ"; }
+    26% { content: "JOA"; }
+    27% { content: "JOJ"; }
+    28% { content: "JOL"; }
+    29% { content: "JOB"; }
+    30% { content: "JOQ"; }
+    31% { content: "JOU"; }
+    32% { content: "JOP"; }
+    33% { content: "JOM"; }
+    34% { content: "JOS"; }
+    35% { content: "JOSH"; }
+    36% { content: "JOST"; }
+    37% { content: "JOSJ"; }
+    38% { content: "JOSL"; }
+    39% { content: "JOSX"; }
+    40% { content: "JOSO"; }
+    41% { content: "JOST"; }
+    42% { content: "JOSU"; }
+    43% { content: "JOSZ"; }
+    44% { content: "JOSP"; }
+    45% { content: "JOSV"; }
+    46% { content: "JOST"; }
+    100% { content: "JOST"; }
+}
+
+.H1_wrap {
+   overflow: hidden;
+   position: relative;
+}
+
+.H1_bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: auto;
+}
+
+.H1_content {
+    position: relative;
+    padding-top: 4%;
+}
+
+h2 {
+    
+    display: inline-block;
+    font-weight: 600;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+#header{
+    padding: -2px;
+    grid-column: 1/4;
+    margin-bottom: 7%;
+}
+
+#header2{
+    padding: -2px;
+    grid-column: 1/4;
+}
+
+.info-head {
+    color: rgba(6, 74, 119, 1);
+    
+}
+.info {
+    padding: 4px;
+    text-align: center;
+    font-size: 400;
+}
+
+.info-time {
+    font-weight: 300;
+}
+
+
+h6 {
+    font-size: 20pt;
+    margin-bottom: -5px;
+}
+
+#characterset {
+    width: 30%;
+    padding: 2px;
+    margin-left: 4%;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#displaylevel {
+    background-color: rgba(255, 255, 255, 1);
+    text-indent: 20px;
+}
+
+#informational {
+    background-color: rgba(255, 255, 255, 1);
+    text-indent: 20px;
+}
+
+#bodycopy {
+    background-color: rgba(255, 255, 255, 1);
+    text-indent: 20px;
+}
+
+.DisLVLClass {
+    padding-left: 10px;
+}
+
+.Navigation a {
+   position: relative;
+   text-align: right;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    padding-right: 50px;
+    text-decoration: none;
+}
+#DisLVL_tomorrow {
+    border-right: 1pt dashed black;
+    border-top: 1pt dashed black;
+    color: rgba(0, 55, 255, 1);
+    font-size: 25pt;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+#DisLVL_modern {
+    border-right: 1pt dashed black;
+    border-top: 1pt dashed black;
+    margin-top: -20%;
+    font-size: 25pt;
+    color: gray;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 5%;
+}
+#DisLVL_today {
+    border-left: 1pt dashed black;
+    border-top: 1pt dashed black;
+    margin-left: -5.4%;
+    color: rgba(43, 170, 255, 1);
+    font-size: 32pt;
+    font-weight: 500;
+    letter-spacing: 30px;
+}
+
+#DisLVL_innovations {
+    color: rgba(0, 55, 255, 1);
+    font-size: 25pt;
+    font-weight: 300;
+    letter-spacing: 20px;
+}
+
+#DisLVL_tech {
+    margin-top: -10px;
+    padding-top: -50px;
+    font-size: 30pt;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+#DisLVL_tomorrow2 {
+    font-size: 25pt;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scaleY(-1);
+    opacity: 0.4;
+    margin-top: -11.5%;
+}
+li {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.Navigation h2 {
+    color: rgba(6, 74, 119, 1);
+    padding-left: 5%;
+}
+
+.Navigation {
+    background-color: rgba(255, 255, 255, 1);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    height: 60px;
+    
+}
+
+h1 {
+    font-size: 140px;
+    font-weight: 700;
+    padding-left: 5%;
+    color: rgba(255, 255, 255, 1);
+}
+
+p {
+    font-weight: 700;
+}
+
+.Navigation a:hover {
+    color: rgba(0, 55, 255, 1);
+}
+
+h4 {
+    text-indent: 20px;
+    margin-top: -2px;
+    padding-left: -1px;
+    padding: 5px;
+    background-color: rgba(217, 217, 217, 1);
+    text-align: left;
+}
+
+.text p:hover {
+    color: rgba(0, 55, 255, 1);
+}
+
+#displaylevel {
+    grid-column: 1/4;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(6, 74, 119, 1);
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 10px;
+}
